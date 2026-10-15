@@ -1,0 +1,15 @@
+import { ArrowDown, ArrowUpRight } from "lucide-react";
+export default function Home() {
+  return <>
+    <header className="site-header" data-webik-id="navigation"><a className="logo" href="#">forma<span>STUDIO ARCHITEKTURY</span></a><nav><a href="#projekty">Naše práce</a><a href="#studio">O studiu</a><a className="contact-link" href="#kontakt">Pojďme něco vytvořit <ArrowUpRight size={13} /></a></nav></header>
+    <main>
+      <section className="hero">
+        <div className="hero-copy"><span className="kicker" data-webik-id="hero-eyebrow"><i /> ARCHITEKTURA, KTERÁ DÁVÁ SMYSL</span><h1 data-webik-id="hero-title">Prostor, ve kterém<br />chcete <em>žít.</em></h1><p data-webik-id="hero-description">Navrhujeme domy a interiéry, které mají duši.<br />S respektem k místu. S citem pro váš život.</p><a className="primary-button" href="#projekty" data-webik-id="hero-button">Prohlédnout naše projekty <ArrowUpRight size={17} /></a><div className="hero-footnote"><span>BRNO & CELÁ ČESKÁ REPUBLIKA</span><ArrowDown size={17} /></div></div>
+        <div className="hero-image" data-webik-id="hero-image"><img src="/house.svg" alt="Architektonická ilustrace moderního domu v přírodě" /><div className="image-caption"><span>01 / VYBRANÝ PROJEKT</span><strong>Dům pod lesem<ArrowUpRight size={17} /></strong><small>Rodinný dům · Moravský kras · 2025</small></div><span className="image-index">F—01</span></div>
+      </section>
+      <section className="intro" id="studio" data-webik-id="studio-intro"><span className="section-label">DOBRÝ PROSTOR MĚNÍ KAŽDODENNOST</span><div><h2>Každý projekt začíná<br /><em>dobrou otázkou.</em></h2><p>Jak chcete žít? Co vám dělá radost? Nasloucháme, hledáme souvislosti a společně vytváříme místa, která vám budou blízká i za dvacet let.</p></div><div className="metrics"><div><strong>12<span>+</span></strong><small>let zkušeností</small></div><div><strong>48</strong><small>realizovaných příběhů</small></div></div></section>
+      <section className="projects" id="projekty"><div className="section-heading"><span className="section-label">VÝBĚR Z NAŠÍ PRÁCE</span><h2>Projekty s vlastním příběhem.</h2></div><div className="project-grid"><article data-webik-id="project-house"><img src="/house.svg" alt="Dům pod lesem" /><h3>Dům pod lesem <ArrowUpRight size={16} /></h3><p>Rodinný dům · Moravský kras</p></article><article data-webik-id="project-interior"><div className="interior-art"><span /><i /></div><h3>Klid uprostřed města <ArrowUpRight size={16} /></h3><p>Interiér bytu · Brno</p></article></div></section>
+      <section id="kontakt" className="contact" data-webik-id="contact"><span className="section-label">MÁTE V HLAVĚ NÁPAD?</span><h2>Dejme mu společně tvar.</h2><a href="mailto:ahoj@example.com">ahoj@example.com <ArrowUpRight size={22} /></a><p>Ukázkový obsah pro Webik. Studio Forma je fiktivní.</p></section>
+    </main><footer>forma<span>Architektura pro skutečný život.</span><small>© 2026 Studio Forma · Demo</small></footer>
+  </>;
+}
