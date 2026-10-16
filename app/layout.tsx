@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
 import { Inspector } from "../components/inspector";
+import { business } from "../content/business";
+import { seo } from "../content/seo";
+import { siteMetadata } from "../lib/seo";
+import { readImageInfo } from "../lib/share-image-size";
 import "./globals.css";
-export const metadata: Metadata = { title: "Nerd Pottery", description: "Nerd Pottery — keramická dílna a hrnečky inspirované Pánem prstenů. Ukázková prezentace pro Webik." };
+// Title, description, share image and the website address come from content/seo.ts; the size of a
+// custom share image is read from its file so og:image:width/height match it.
+export const metadata: Metadata = siteMetadata(business, seo, seo.shareImage ? readImageInfo(seo.shareImage.url) : undefined);
 export default function Layout({ children }: { children: React.ReactNode }) { return <html lang="cs"><body>{children}<Inspector /></body></html>; }
