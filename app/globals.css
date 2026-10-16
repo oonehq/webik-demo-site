@@ -25,6 +25,12 @@ a:focus-visible{outline:2px solid #937438;outline-offset:5px}
 @media(max-width:620px){.logo{font-size:33px}.site-header nav{gap:12px}.contact-link{max-width:105px;line-height:1.5}.hero-copy h1{font-size:clamp(42px,10vw,57px)}.pottery-manifesto{min-height:460px}.manifesto-text>p{font-size:53px}.studio-note{margin:15px 0 0;padding-left:20px}.story-grid article{padding:24px}.intro h2,h2{font-size:32px}}
 
 /* The iframe element is not a scroll container: contain its document instead. */
+.hero{position:relative;isolation:isolate;overflow:hidden}
+.hero-background{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:-1}
+.hero-copy{background:linear-gradient(90deg,#f7f7f0fa,#f7f7f0ed 80%,#f7f7f0cc)}
+.hero .pottery-manifesto{background:#203b2bd9}
+@media(max-width:620px){.hero-background{object-position:center}.hero-copy{background:#f7f7f0ed}.hero .pottery-manifesto{background:#203b2bcc}}
+
 html.webik-embedded,html.webik-embedded body{overscroll-behavior-y:contain}
 
 /* Údaje o firmě z content/business.ts; zobrazí se jen vyplněná pole. */
