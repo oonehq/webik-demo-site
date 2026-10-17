@@ -1,21 +1,39 @@
 {
-  "name": "@webik/site",
+  "name": "webik-demo-site",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
+  "packageManager": "pnpm@10.33.0",
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "dev": "next dev",
     "dev:local": "next dev --hostname 127.0.0.1 --port 3101",
     "build": "next build",
     "start": "next start --hostname 127.0.0.1 --port 3101",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test test/*.test.ts"
   },
   "dependencies": {
-    "@oonehq/webik-site-kit": "workspace:^",
+    "@oonehq/webik-site-kit": "file:../../webik/packages/site-kit",
     "next": "16.4.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "@base-ui/react": "1.9.0",
     "lucide-react": "^0.577.0",
     "clsx": "^2.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "typescript": "^5.9.3",
+    "tsx": "^4.21.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
   }
 }
