@@ -27,7 +27,7 @@ a:focus-visible{outline:2px solid #937438;outline-offset:5px}
 /* The iframe element is not a scroll container: contain its document instead. */
 .hero{position:relative;isolation:isolate;overflow:hidden}
 /* Self-made hero background: throwing rings of a potter's wheel over warm clay tones (pure CSS, no image). */
-.hero-background{position:absolute;inset:0;z-index:-1;pointer-events:none;background:repeating-radial-gradient(circle at -6% 115%,transparent 0 21px,#83986f1c 21px 22px),radial-gradient(ellipse at 0% 100%,#d9b48f66,transparent 60%),radial-gradient(ellipse at 60% -10%,#e6d8b8b3,transparent 55%),linear-gradient(160deg,#f7f7f0,#ebecdd)}
+.hero-background{position:absolute;inset:0;z-index:-1;background:repeating-radial-gradient(circle at -6% 115%,transparent 0 21px,#83986f1c 21px 22px),radial-gradient(ellipse at 0% 100%,#d9b48f66,transparent 60%),radial-gradient(ellipse at 60% -10%,#e6d8b8b3,transparent 55%),linear-gradient(160deg,#f7f7f0,#ebecdd)}
 .hero-copy{background:none}
 .hero .pottery-manifesto{background:repeating-radial-gradient(circle at 50% 58%,transparent 0 17px,#f7f7f012 17px 18px,transparent 18px 35px,#d6c69d26 35px 36px),radial-gradient(circle at 50% 58%,#58775c 0,#3c5946 40%,#2b4433 75%)}
 @media(max-width:620px){.hero-background{background:repeating-radial-gradient(circle at 106% -8%,transparent 0 21px,#83986f1c 21px 22px),radial-gradient(ellipse at 100% 0%,#d9b48f59,transparent 60%),linear-gradient(170deg,#f7f7f0,#ebecdd)}.hero-copy{background:#f7f7f09e}}
