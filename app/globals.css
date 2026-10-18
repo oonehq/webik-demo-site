@@ -26,10 +26,11 @@ a:focus-visible{outline:2px solid #937438;outline-offset:5px}
 
 /* The iframe element is not a scroll container: contain its document instead. */
 .hero{position:relative;isolation:isolate;overflow:hidden}
-.hero-background{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:-1}
-.hero-copy{background:linear-gradient(90deg,#f7f7f0fa,#f7f7f0ed 80%,#f7f7f0cc)}
-.hero .pottery-manifesto{background:#203b2bd9}
-@media(max-width:620px){.hero-background{object-position:center}.hero-copy{background:#f7f7f0ed}.hero .pottery-manifesto{background:#203b2bcc}}
+/* Self-made hero background: throwing rings of a potter's wheel over warm clay tones (pure CSS, no image). */
+.hero-background{position:absolute;inset:0;z-index:-1;pointer-events:none;background:repeating-radial-gradient(circle at -6% 115%,transparent 0 21px,#83986f1c 21px 22px),radial-gradient(ellipse at 0% 100%,#d9b48f66,transparent 60%),radial-gradient(ellipse at 60% -10%,#e6d8b8b3,transparent 55%),linear-gradient(160deg,#f7f7f0,#ebecdd)}
+.hero-copy{background:none}
+.hero .pottery-manifesto{background:repeating-radial-gradient(circle at 50% 58%,transparent 0 17px,#f7f7f012 17px 18px,transparent 18px 35px,#d6c69d26 35px 36px),radial-gradient(circle at 50% 58%,#58775c 0,#3c5946 40%,#2b4433 75%)}
+@media(max-width:620px){.hero-background{background:repeating-radial-gradient(circle at 106% -8%,transparent 0 21px,#83986f1c 21px 22px),radial-gradient(ellipse at 100% 0%,#d9b48f59,transparent 60%),linear-gradient(170deg,#f7f7f0,#ebecdd)}.hero-copy{background:#f7f7f09e}}
 
 
 /* Údaje o firmě z content/business.ts; zobrazí se jen vyplněná pole. */

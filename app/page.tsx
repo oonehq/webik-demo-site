@@ -15,6 +15,7 @@ export default function Home() {
     </header>
     <main>
       <section className="hero">
+        <div className="hero-background" aria-hidden="true" data-webik-id="hero-background" />
         <div className="hero-copy">
           <span className="kicker" data-webik-id="hero-eyebrow"><i /> KERAMIKA S KUSKEM FANTAZIE</span>
           <h1 data-webik-id="hero-title">Velké příběhy.<br />Váš oblíbený <em>hrnek.</em></h1>
